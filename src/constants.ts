@@ -1,0 +1,1 @@
+export const SUCCESS_TIMEOUT_SECONDS = 2;
