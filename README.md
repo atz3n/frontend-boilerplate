@@ -101,4 +101,4 @@ PRs accepted.
 If editing the Readme, please conform to the [standard-readme](https://github.com/RichardLitt/standard-readme) specification.
 
 ## License
-[MIT](./LICENSE) © Attila Aldemir
+[MIT](./LICENSE) © atz3n
