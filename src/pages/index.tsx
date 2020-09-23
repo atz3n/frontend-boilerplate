@@ -18,7 +18,7 @@ const Home: React.FC = () => {
 
 
     const handleButtonClick = (): void => {
-        const mode =  + DotEnv.isDev ? "development" : "production";
+        const mode = DotEnv.isDev ? "development" : "production";
         const successTitle = "You did it!!! You pressed the button in " + mode + " mode!!";
 
         setStateFragment(<Success title={successTitle} />);

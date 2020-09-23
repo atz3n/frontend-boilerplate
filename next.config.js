@@ -24,7 +24,7 @@ const GET_ABLE_PAGES = [
  ************************************************************************/
 
 const isProd = (process.env.NODE_ENV || "production") === "production";
-const linkPrefix = isProd ? SUB_DOMAIN : '';
+const linkPrefix = isProd ? SUB_DOMAIN : "";
 
 
 const IS_DEV = isProd ? false : process.env.RUN_ENV === "prod" ? false : true;
@@ -46,5 +46,5 @@ module.exports = withSass(withCss({
         /* .env */
         IS_DEV,
     },
-    generateBuildId: async () => 'current'
+    generateBuildId: async () => "current"
 }));
