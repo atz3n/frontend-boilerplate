@@ -1,6 +1,6 @@
-# frontend-bootstrap
+# frontend-template
 
-Bootstrap repo for SPA development.
+Template repo for SPA development.
 
 This repository contains a basic SPA to get easily and quick started. It uses [Next.js](https://nextjs.org) with [TypeScript](https://www.typescriptlang.org) and [react-bootstrap](https://react-bootstrap.github.io). An deployment workflow for [GitHub Pages](https://pages.github.com) is also included.
 
