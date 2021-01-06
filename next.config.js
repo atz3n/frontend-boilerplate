@@ -12,8 +12,8 @@ dotenv.config();
  *  Config
  ************************************************************************/
 
-const SUB_DOMAIN = "";
-const GET_ABLE_PAGES = [
+const SUB_PAGE = "";
+const GETABLE_PAGES = [
     "/",
     "/subpage"
 ];
@@ -24,7 +24,7 @@ const GET_ABLE_PAGES = [
  ************************************************************************/
 
 const isProd = (process.env.NODE_ENV || "production") === "production";
-const linkPrefix = isProd ? SUB_DOMAIN : "";
+const linkPrefix = isProd ? SUB_PAGE : "";
 
 
 const IS_DEV = isProd ? false : process.env.RUN_ENV === "prod" ? false : true;
@@ -34,7 +34,7 @@ module.exports = withSass(withCss({
     trailingSlash: true,
     exportPathMap() {
         const pages = {};
-        GET_ABLE_PAGES.forEach((page) => {
+        GETABLE_PAGES.forEach((page) => {
             pages[page] = { page };
         });
         return pages;
